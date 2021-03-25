@@ -1,7 +1,13 @@
 # Instructions for starting a project:
 
-1. `git clone https://github.com/Roman-Gulamov/Buhone.git`
+``` bash
+    1.  git clone https://github.com/Roman-Gulamov/Buhone.git
+```
 
-2. `yarn install`
+``` bash
+    2.  yarn install
+```
 
-3. `yarn start`
+``` bash
+    3.  yarn start
+```
