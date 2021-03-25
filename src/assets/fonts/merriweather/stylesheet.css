@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Merriweather', serif;
+    font-style: normal;
+    font-weight: 700;
+    src: url('Merriweather-Bold.ttf');
+    src: local(''),
+        url('Merriweather-Bold.ttf') format('truetype'),
+        url('Merriweather-Bold.woff') format('woff'),
+}
+
+@font-face {
+    font-family: 'Merriweather', serif;
+    font-style: normal;
+    font-weight: 900;
+    src: url('Merriweather-Black.ttf');
+    src: local(''),
+        url('Merriweather-Black.ttf') format('truetype'),
+        url('Merriweather-Black.woff') format('woff'),
+}
