@@ -24,7 +24,7 @@ export const App = () => {
             <GlobalStyle />
             <Router>
                 <Header />
-
+                
                 <Switch>
                     <Route exact path='/main' component={Main} />
                     <Route exact path='/services' component={Services} />
