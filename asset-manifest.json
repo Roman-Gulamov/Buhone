@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/Buhone/static/css/main.14be87d2.chunk.css",
-    "main.js": "/Buhone/static/js/main.28b3e844.chunk.js",
-    "main.js.map": "/Buhone/static/js/main.28b3e844.chunk.js.map",
+    "main.css": "/Buhone/static/css/main.95289bfc.chunk.css",
+    "main.js": "/Buhone/static/js/main.df7adb53.chunk.js",
+    "main.js.map": "/Buhone/static/js/main.df7adb53.chunk.js.map",
     "runtime-main.js": "/Buhone/static/js/runtime-main.f98dd194.js",
     "runtime-main.js.map": "/Buhone/static/js/runtime-main.f98dd194.js.map",
     "static/css/2.4ce9e501.chunk.css": "/Buhone/static/css/2.4ce9e501.chunk.css",
-    "static/js/2.e3f86c2c.chunk.js": "/Buhone/static/js/2.e3f86c2c.chunk.js",
-    "static/js/2.e3f86c2c.chunk.js.map": "/Buhone/static/js/2.e3f86c2c.chunk.js.map",
+    "static/js/2.1515e916.chunk.js": "/Buhone/static/js/2.1515e916.chunk.js",
+    "static/js/2.1515e916.chunk.js.map": "/Buhone/static/js/2.1515e916.chunk.js.map",
     "index.html": "/Buhone/index.html",
     "static/css/2.4ce9e501.chunk.css.map": "/Buhone/static/css/2.4ce9e501.chunk.css.map",
-    "static/css/main.14be87d2.chunk.css.map": "/Buhone/static/css/main.14be87d2.chunk.css.map",
-    "static/js/2.e3f86c2c.chunk.js.LICENSE.txt": "/Buhone/static/js/2.e3f86c2c.chunk.js.LICENSE.txt",
+    "static/css/main.95289bfc.chunk.css.map": "/Buhone/static/css/main.95289bfc.chunk.css.map",
+    "static/js/2.1515e916.chunk.js.LICENSE.txt": "/Buhone/static/js/2.1515e916.chunk.js.LICENSE.txt",
     "static/media/stylesheet.css": "/Buhone/static/media/Merriweather-Bold.7b45103b.ttf"
   },
   "entrypoints": [
     "static/js/runtime-main.f98dd194.js",
     "static/css/2.4ce9e501.chunk.css",
-    "static/js/2.e3f86c2c.chunk.js",
-    "static/css/main.14be87d2.chunk.css",
-    "static/js/main.28b3e844.chunk.js"
+    "static/js/2.1515e916.chunk.js",
+    "static/css/main.95289bfc.chunk.css",
+    "static/js/main.df7adb53.chunk.js"
   ]
 }
