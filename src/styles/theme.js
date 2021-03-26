@@ -4,6 +4,8 @@ export const theme = {
         titleColor: '#BDBDBD',
         desColor: '#333333',
         textColor: '#000000',
+        navColor: '#222222',
+        bgGray: '#EBEBEB'
     },
     fonts: {
         title: 'Merriweather, serif',
