@@ -2,7 +2,15 @@ import styled, { css } from 'styled-components';
 
 export const Wrapper = styled.div`
     ${props => props.header && css`
-        min-height: 6.9em;
+        height: 17vh;
+
+        @media screen and (max-width: 1024px) {
+            margin-bottom: 2em;
+        }
+
+        @media screen and (max-width: 281px) {
+            margin-bottom: 4em;
+        }
     `}
 
     ${props => props.bgWhite && css`
