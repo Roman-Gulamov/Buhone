@@ -20,7 +20,6 @@
     background: #bdc3c7;
 }
 
-
 .bm-menu-wrap {
     position: fixed;
     height: 100%;
@@ -69,6 +68,6 @@
     }
     
     .bm-menu-wrap {
-        width: 200px;
+        width: 200px !important;
     }
 }
