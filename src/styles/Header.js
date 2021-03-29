@@ -11,7 +11,7 @@ export const HeaderWrapper = styled.header`
 export const HeaderLogo = styled.div`
     display: flex;
     flex-direction: row;
-    margin-top: 2.3em;
+    margin-top: 2em;
 
     
     @media screen and (max-width: 1024px) {
