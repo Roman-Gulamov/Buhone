@@ -3,5 +3,6 @@ export const carouselSettings = {
     emulateTouch: true,
     infiniteLoop: true,
     showThumbs: false,
-    showStatus: false
+    showStatus: false,
+    swipeScrollTolerance: 2,
 };
