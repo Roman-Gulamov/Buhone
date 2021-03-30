@@ -44,34 +44,6 @@ export const GlobalStyle = createGlobalStyle`
         list-style: none;
     }
 
-    ${'' /* body {
-        &::before {
-            content: ' ';
-            height: 100%;
-            width: 100%;
-            position: fixed;
-            top: 0;
-            left: 0;
-            will-change: transform;
-            z-index: -1;
-            background-color: #203748;
-        }
-        
-        &::-webkit-scrollbar { 
-            width: 10px;
-        }
-    
-        &::-webkit-scrollbar-track-piece { 
-            background:  #172936;
-        }
-    
-        &::-webkit-scrollbar-thumb { 
-            background-color: #D3D3D3;
-            border-radius: 15px;
-            height: 100px;
-        }
-    } */}
-
     blockquote, q {
         quotes: none;
     }
