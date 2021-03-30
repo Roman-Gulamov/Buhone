@@ -14,10 +14,10 @@ export const Wrapper = styled.div`
     `}
 
     ${props => props.bgWhite && css`
-        color: '#fff';
+        background-color: #fff;
     `}
 
     ${props => props.bgGray && css`
-        color: ${props => props.theme.colors.bgGray};
+        background-color: ${props => props.theme.colors.bgGray};
     `}
 `

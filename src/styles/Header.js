@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
 
-export const HeaderWrapper = styled.header`
+export const HeaderWrapper = styled.div`
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -112,7 +112,7 @@ export const NavMenu = styled.div`
         margin-bottom: 1em;
 
         & span {
-            color: ${props => props.theme.colors.textColor};
+            color: #fff;
             font-size: 1em;
         }
     }
