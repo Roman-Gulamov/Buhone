@@ -7,7 +7,7 @@ import {
     Redirect } from 'react-router-dom';
 
 import { theme } from '../styles/theme';
-import { Header } from './Header/Header';
+import Header from './Header/Header';
 import { Main } from './Main/Main';
 import { Services } from './Services/Services';
 import { About } from './About/About';
@@ -32,7 +32,7 @@ export const App = () => {
                     <Route exact path='/clients' component={Clients} />
                     <Route exact path='/reviews' component={Reviews} />
                     <Route exact path='/contact' component={Contact} />
-                    <Redirect to='/contact' />
+                    <Redirect to='/main' />
                 </Switch>
             </Router> 
         </ThemeProvider>
