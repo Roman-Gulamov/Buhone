@@ -1,10 +1,11 @@
-import React from 'react';
-import '../../styles/burgerMenu.css';
+import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { slide as Menu } from 'react-burger-menu';
+import { withSize } from 'react-sizeme'
 
 import Logo from '../../assets/images/Header/Logo.png';
 import { INFORM_DATA, NAV_DATA } from './HeaderData';
+import '../../styles/burgerMenu.css';
 import { Wrapper } from '../../styles/Wrapper';
 import { Container } from '../../styles/Container';
 import {
@@ -21,22 +22,28 @@ import {
     MyNavLink } from '../../styles/Header';
 
 
-export const Header = () => {
+const Header = ({ size }) => {
+    const [smallScreen, setSmallCreen] = useState();
+
+    useEffect(() => size.width > 1024 ? setSmallCreen(false) : setSmallCreen(true), [size.width]);
+
     return (
-        <Wrapper header bgGray>
-            <NavMenu>
-                <Menu right>
-                    {NAV_DATA.map(({ id, path, title }) =>
-                        <MyNavLink 
-                            key={id} 
-                            to={path} 
-                            activeClassName='active'
-                        >
-                            <NavText>{title}</NavText>
-                        </MyNavLink>
-                    )}
-                </Menu>
-            </NavMenu>
+        <Wrapper as="header" header bgWhite>
+            {smallScreen && (
+                <NavMenu>
+                    <Menu right>
+                        {NAV_DATA.map(({ id, path, title }) =>
+                            <MyNavLink 
+                                key={id} 
+                                to={path} 
+                                activeClassName='active'
+                            >
+                                <NavText>{title}</NavText>
+                            </MyNavLink>
+                        )}
+                    </Menu>
+                </NavMenu>
+            )}
             <Container>
                 <HeaderWrapper>
                     <HeaderLogo>
@@ -71,3 +78,5 @@ export const Header = () => {
         </Wrapper>
     )
 }
+
+export default withSize()(Header)
