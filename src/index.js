@@ -5,5 +5,4 @@ import { App } from './Components/App';
 import './assets/fonts/lato/stylesheet.css';
 import './assets/fonts/merriweather/stylesheet.css';
 
-
-ReactDOM.render(<App />,document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
