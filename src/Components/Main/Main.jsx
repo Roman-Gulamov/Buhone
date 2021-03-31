@@ -23,7 +23,7 @@ export const Main = () => {
         <Helmet>
             <meta charSet="utf-8" />
             <title>BuhOne | Главная</title>
-            <meta name="description" content="Profile" />
+            <meta name="description" content="Main" />
             <link rel="canonical" href="https://roman-gulamov.github.io/Buhone/#/main" />
         </Helmet>
         <MyCarousel {...carouselSettings}>
