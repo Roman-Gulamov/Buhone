@@ -10,31 +10,31 @@ export const SERVICES_DATA = [
     {
         id: '1',
         img: Skyscraper,
-        title: 'Бухгалтерское обслуживание'
+        text: 'Бухгалтерское обслуживание'
     },
     {
         id: '2',
         img: BurjKhalifa,
-        title: 'Работа с бумагами'
+        text: 'Работа с бумагами'
     },
     {
         id: '3',
         img: Bottle,
-        title: 'Холодные звонки'
+        text: 'Холодные звонки'
     },
     {
         id: '4',
         img: TwinTowers,
-        title: 'Консультирование'
+        text: 'Консультирование'
     },
     {
         id: '5',
         img: Sky,
-        title: 'Заключение договоров'
+        text: 'Заключение договоров'
     },
     {
         id: '6',
         img: Crescent,
-        title: 'Исполнение актов'
+        text: 'Исполнение актов'
     }
 ]

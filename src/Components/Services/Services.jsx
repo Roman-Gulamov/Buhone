@@ -3,12 +3,11 @@ import { Helmet } from 'react-helmet';
 
 import { SERVICES_DATA } from './ServicesData';
 import { Container } from '../../styles/Container';
-import { Wrapper } from '../../styles/Wrapper';
+import { Wrapper, Description, Title } from '../../styles/Reusable';
 import {
-    ServicesDescription,
-    ServicesTitle,
     ServicesContent,
     ContentItem,
+    ItemRelative,
     ItemImg,
     ItemBlack,
     BlackInner,
@@ -22,27 +21,29 @@ export const Services = () => {
         <Helmet>
             <meta charSet="utf-8" />
             <title>BuhOne | Услуги</title>
-            <meta name="description" content="Profile" />
+            <meta name="description" content="Services" />
             <link rel="canonical" href="https://roman-gulamov.github.io/Buhone/#/services" />
         </Helmet>
         <Wrapper bgGray>
             <Container>
-                <ServicesDescription>Наши услуги</ServicesDescription>
-                <ServicesTitle>Мы специализируемся</ServicesTitle>
+                <Description>Наши услуги</Description>
+                <Title>Мы специализируемся</Title>
                 <ServicesContent>
-                    {SERVICES_DATA.map(({ id, img, title }) =>
+                    {SERVICES_DATA.map(({ id, img, text }) =>
                         <ContentItem key={id}>
-                            <ItemImg>
-                                <img src={img} alt={title} />
-                            </ItemImg>
-                            <ItemBlack>
-                                <BlackInner>
-                                    <ItemText>
-                                        {title}
-                                    </ItemText>
-                                </BlackInner>
-                            </ItemBlack>
-                            <ItemHover></ItemHover>
+                            <ItemRelative>
+                                <ItemImg>
+                                    <img src={img} alt={text} />
+                                </ItemImg>
+                                <ItemBlack>
+                                    <BlackInner>
+                                        <ItemText>
+                                            {text}
+                                        </ItemText>
+                                    </BlackInner>
+                                </ItemBlack>
+                                <ItemHover></ItemHover>
+                            </ItemRelative>
                         </ContentItem>
                     )}
                 </ServicesContent>

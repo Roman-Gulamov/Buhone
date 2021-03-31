@@ -1,31 +1,5 @@
 import styled from 'styled-components';
 
-
-export const ServicesDescription = styled.p`
-    font-size: 1.2em;
-    padding-top: 1em;
-    font-weight: bold;
-    color: ${props => props.theme.colors.titleColor};
-
-    @media screen and (max-width: 621px) {
-        font-size: 1em;
-        text-align: center;
-    }
-`
-
-export const ServicesTitle = styled.h1`
-    font-family: ${props => props.theme.fonts.title};
-    color: ${props => props.theme.colors.desColor};
-    font-size: 2.5em;
-    font-weight: 900;
-    margin-bottom: 0.5em;
-
-    @media screen and (max-width: 621px) {
-        font-size: 1.5em;
-        text-align: center;
-    }
-`
-
 export const ServicesContent = styled.div`
     display: flex;
     flex-flow: row wrap;
@@ -34,14 +8,28 @@ export const ServicesContent = styled.div`
 `
 
 export const ContentItem = styled.div`
-    position: relative;
-    width: 17.5em;
+    width: 33%;
     margin-bottom: 2em;
+    padding-right: 1em;
+    transition: all .5s ease;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    @media screen and (max-width: 1024px) {
+        width: 50%;
+    }
 
     @media screen and (max-width: 621px) {
         width: 100%;
+        padding-right: 0;
         margin-bottom: 1em;
     }
+`
+
+export const ItemRelative = styled.div`
+    position: relative;
 `
 
 export const ItemImg = styled.div`
@@ -65,20 +53,19 @@ export const ItemBlack = styled.div`
 `
 
 export const BlackInner = styled.div`
-    width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    width: 100%;
+    height: 100%;
 `
 
 export const ItemText = styled.p`
     max-width: 50%;
-    color: #fff;
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: bold;
+    color: #fff;
     padding: 0 0 1.5em 1.5em;
-    z-index: 9999;
 
     @media screen and (max-width: 621px) {
         max-width: 100%;
