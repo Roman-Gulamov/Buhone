@@ -5,8 +5,9 @@ import { withSize } from 'react-sizeme'
 
 import Logo from '../../assets/images/Header/Logo.png';
 import { INFORM_DATA, NAV_DATA } from './HeaderData';
+
 import '../../styles/burgerMenu.css';
-import { Wrapper } from '../../styles/Wrapper';
+import { Wrapper } from '../../styles/Reusable';
 import { Container } from '../../styles/Container';
 import {
     HeaderWrapper,
