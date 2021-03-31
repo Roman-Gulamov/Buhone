@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/Buhone/static/css/main.ca74efda.chunk.css",
-    "main.js": "/Buhone/static/js/main.02d5a3a0.chunk.js",
-    "main.js.map": "/Buhone/static/js/main.02d5a3a0.chunk.js.map",
+    "main.css": "/Buhone/static/css/main.531698b4.chunk.css",
+    "main.js": "/Buhone/static/js/main.d5a96da4.chunk.js",
+    "main.js.map": "/Buhone/static/js/main.d5a96da4.chunk.js.map",
     "runtime-main.js": "/Buhone/static/js/runtime-main.f98dd194.js",
     "runtime-main.js.map": "/Buhone/static/js/runtime-main.f98dd194.js.map",
     "static/css/2.4ce9e501.chunk.css": "/Buhone/static/css/2.4ce9e501.chunk.css",
-    "static/js/2.870c2872.chunk.js": "/Buhone/static/js/2.870c2872.chunk.js",
-    "static/js/2.870c2872.chunk.js.map": "/Buhone/static/js/2.870c2872.chunk.js.map",
+    "static/js/2.0ba3fdb4.chunk.js": "/Buhone/static/js/2.0ba3fdb4.chunk.js",
+    "static/js/2.0ba3fdb4.chunk.js.map": "/Buhone/static/js/2.0ba3fdb4.chunk.js.map",
     "index.html": "/Buhone/index.html",
     "static/css/2.4ce9e501.chunk.css.map": "/Buhone/static/css/2.4ce9e501.chunk.css.map",
-    "static/css/main.ca74efda.chunk.css.map": "/Buhone/static/css/main.ca74efda.chunk.css.map",
-    "static/js/2.870c2872.chunk.js.LICENSE.txt": "/Buhone/static/js/2.870c2872.chunk.js.LICENSE.txt",
+    "static/css/main.531698b4.chunk.css.map": "/Buhone/static/css/main.531698b4.chunk.css.map",
+    "static/js/2.0ba3fdb4.chunk.js.LICENSE.txt": "/Buhone/static/js/2.0ba3fdb4.chunk.js.LICENSE.txt",
     "static/media/Bottle.1b24b91b.jpg": "/Buhone/static/media/Bottle.1b24b91b.jpg",
     "static/media/BurjKhalifa.b10a606e.jpg": "/Buhone/static/media/BurjKhalifa.b10a606e.jpg",
     "static/media/Canal.fcda4a74.jpg": "/Buhone/static/media/Canal.fcda4a74.jpg",
     "static/media/Crescent.1a57c62b.jpg": "/Buhone/static/media/Crescent.1a57c62b.jpg",
     "static/media/Hermitage.a94d86bc.jpg": "/Buhone/static/media/Hermitage.a94d86bc.jpg",
-    "static/media/stylesheet.css": "/Buhone/static/media/Merriweather-Bold.7b45103b.ttf",
+    "static/media/stylesheet.css": "/Buhone/static/media/Merriweather-Bold.dc864d5d.woff2",
     "static/media/Park.6e5cc502.jpg": "/Buhone/static/media/Park.6e5cc502.jpg",
     "static/media/SaintP.2e3bc78a.jpg": "/Buhone/static/media/SaintP.2e3bc78a.jpg",
     "static/media/Sky.ee1a4b1f.jpg": "/Buhone/static/media/Sky.ee1a4b1f.jpg",
@@ -27,8 +27,8 @@
   "entrypoints": [
     "static/js/runtime-main.f98dd194.js",
     "static/css/2.4ce9e501.chunk.css",
-    "static/js/2.870c2872.chunk.js",
-    "static/css/main.ca74efda.chunk.css",
-    "static/js/main.02d5a3a0.chunk.js"
+    "static/js/2.0ba3fdb4.chunk.js",
+    "static/css/main.531698b4.chunk.css",
+    "static/js/main.d5a96da4.chunk.js"
   ]
 }
