@@ -8,6 +8,12 @@ export const CarouselImg = styled.div`
     &&& img {
         width: 24%;
         height: auto;
+
+        @media screen and (max-width: 1024px) {
+            width: 48%;
+            padding-right: 1em;
+            margin-bottom: 2em;
+        }
     }
 `
 
@@ -18,6 +24,10 @@ export const MyCarousel = styled(Carousel)`
 
     &&& .slider-wrapper {
         padding-bottom: 6em;
+
+        @media screen and (max-width: 1024px) {
+            padding-bottom: 3em;
+        }
     }
 
     &&& .control-dots {
