@@ -16,7 +16,7 @@ export const ABOUT_DATA = [
     },
     {
         id: '4',
-        count: 142000,
+        count: 14200,
         text: 'Потенциальных клиентов'
     }
 ]
