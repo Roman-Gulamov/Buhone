@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Buhone/static/css/main.531698b4.chunk.css",
-    "main.js": "/Buhone/static/js/main.09e86f20.chunk.js",
-    "main.js.map": "/Buhone/static/js/main.09e86f20.chunk.js.map",
+    "main.js": "/Buhone/static/js/main.a41f1f5b.chunk.js",
+    "main.js.map": "/Buhone/static/js/main.a41f1f5b.chunk.js.map",
     "runtime-main.js": "/Buhone/static/js/runtime-main.f98dd194.js",
     "runtime-main.js.map": "/Buhone/static/js/runtime-main.f98dd194.js.map",
     "static/css/2.4ce9e501.chunk.css": "/Buhone/static/css/2.4ce9e501.chunk.css",
@@ -34,6 +34,6 @@
     "static/css/2.4ce9e501.chunk.css",
     "static/js/2.e14728f8.chunk.js",
     "static/css/main.531698b4.chunk.css",
-    "static/js/main.09e86f20.chunk.js"
+    "static/js/main.a41f1f5b.chunk.js"
   ]
 }
