@@ -20,6 +20,10 @@ export const Wrapper = styled.div`
     ${props => props.clients && css`
         height: 83vh;
         padding-top: 3em;
+
+        @media screen and (max-width: 600px) {
+            height: 79vh;
+        }
     `}
 
     ${props => props.bgWhite && css`
