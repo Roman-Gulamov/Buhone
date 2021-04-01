@@ -8,21 +8,25 @@ export const MAIN_DATA = [
     {
         id: '1',
         img: SaintP,
+        alt: 'SaintP',
         title: 'Бухгалтерские услуги в Санкт-Петербурге'
     },
     {
         id: '2',
         img: Hermitage,
+        alt: 'Hermitage',
         title: 'Быстрая и качественная работа'
     },
     {
         id: '3',
         img: Canal,
+        alt: 'Canal',
         title: 'Правильный подход к любой компании'
     },
     {
         id: '4',
         img: Park,
+        alt: 'Park',
         title: 'Профессиональная помощь в любых вопросах'
     }
 ]
