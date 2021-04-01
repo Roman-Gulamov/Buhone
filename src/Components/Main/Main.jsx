@@ -27,10 +27,10 @@ export const Main = () => {
             <link rel="canonical" href="https://roman-gulamov.github.io/Buhone/#/main" />
         </Helmet>
         <MyCarousel {...carouselSettings}>
-            {MAIN_DATA.map(({ id, img, title }) =>
+            {MAIN_DATA.map(({ id, img, alt, title }) =>
                 <MainCarousel key={id}>
                     <CarouselItem>
-                        <img src={img} alt={id} />
+                        <img src={img} alt={alt} />
                         <ItemContent>
                             <ContentText>{title}</ContentText>
                             <ContentButton>

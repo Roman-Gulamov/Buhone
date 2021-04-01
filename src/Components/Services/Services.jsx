@@ -29,11 +29,11 @@ export const Services = () => {
                 <Description>Наши услуги</Description>
                 <Title>Мы специализируемся</Title>
                 <ServicesContent>
-                    {SERVICES_DATA.map(({ id, img, text }) =>
+                    {SERVICES_DATA.map(({ id, img, alt, text }) =>
                         <ContentItem key={id}>
                             <ItemRelative>
                                 <ItemImg>
-                                    <img src={img} alt={text} />
+                                    <img src={img} alt={alt} />
                                 </ItemImg>
                                 <ItemBlack>
                                     <BlackInner>
