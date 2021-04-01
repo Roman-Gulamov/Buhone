@@ -1,34 +1,39 @@
 {
   "files": {
     "main.css": "/Buhone/static/css/main.531698b4.chunk.css",
-    "main.js": "/Buhone/static/js/main.d5a96da4.chunk.js",
-    "main.js.map": "/Buhone/static/js/main.d5a96da4.chunk.js.map",
+    "main.js": "/Buhone/static/js/main.09e86f20.chunk.js",
+    "main.js.map": "/Buhone/static/js/main.09e86f20.chunk.js.map",
     "runtime-main.js": "/Buhone/static/js/runtime-main.f98dd194.js",
     "runtime-main.js.map": "/Buhone/static/js/runtime-main.f98dd194.js.map",
     "static/css/2.4ce9e501.chunk.css": "/Buhone/static/css/2.4ce9e501.chunk.css",
-    "static/js/2.0ba3fdb4.chunk.js": "/Buhone/static/js/2.0ba3fdb4.chunk.js",
-    "static/js/2.0ba3fdb4.chunk.js.map": "/Buhone/static/js/2.0ba3fdb4.chunk.js.map",
+    "static/js/2.e14728f8.chunk.js": "/Buhone/static/js/2.e14728f8.chunk.js",
+    "static/js/2.e14728f8.chunk.js.map": "/Buhone/static/js/2.e14728f8.chunk.js.map",
     "index.html": "/Buhone/index.html",
     "static/css/2.4ce9e501.chunk.css.map": "/Buhone/static/css/2.4ce9e501.chunk.css.map",
     "static/css/main.531698b4.chunk.css.map": "/Buhone/static/css/main.531698b4.chunk.css.map",
-    "static/js/2.0ba3fdb4.chunk.js.LICENSE.txt": "/Buhone/static/js/2.0ba3fdb4.chunk.js.LICENSE.txt",
+    "static/js/2.e14728f8.chunk.js.LICENSE.txt": "/Buhone/static/js/2.e14728f8.chunk.js.LICENSE.txt",
+    "static/media/Android.b8b9d7a0.png": "/Buhone/static/media/Android.b8b9d7a0.png",
     "static/media/Bottle.1b24b91b.jpg": "/Buhone/static/media/Bottle.1b24b91b.jpg",
     "static/media/BurjKhalifa.b10a606e.jpg": "/Buhone/static/media/BurjKhalifa.b10a606e.jpg",
     "static/media/Canal.fcda4a74.jpg": "/Buhone/static/media/Canal.fcda4a74.jpg",
     "static/media/Crescent.1a57c62b.jpg": "/Buhone/static/media/Crescent.1a57c62b.jpg",
+    "static/media/GitHub.4a5fc35f.png": "/Buhone/static/media/GitHub.4a5fc35f.png",
     "static/media/Hermitage.a94d86bc.jpg": "/Buhone/static/media/Hermitage.a94d86bc.jpg",
     "static/media/stylesheet.css": "/Buhone/static/media/Merriweather-Bold.dc864d5d.woff2",
+    "static/media/Microsoft.3e952a6a.png": "/Buhone/static/media/Microsoft.3e952a6a.png",
     "static/media/Park.6e5cc502.jpg": "/Buhone/static/media/Park.6e5cc502.jpg",
     "static/media/SaintP.2e3bc78a.jpg": "/Buhone/static/media/SaintP.2e3bc78a.jpg",
     "static/media/Sky.ee1a4b1f.jpg": "/Buhone/static/media/Sky.ee1a4b1f.jpg",
     "static/media/Skyscraper.907ccca6.jpg": "/Buhone/static/media/Skyscraper.907ccca6.jpg",
-    "static/media/TwinTowers.bcec03ad.jpg": "/Buhone/static/media/TwinTowers.bcec03ad.jpg"
+    "static/media/TwinTowers.bcec03ad.jpg": "/Buhone/static/media/TwinTowers.bcec03ad.jpg",
+    "static/media/Twitter.85a828a1.png": "/Buhone/static/media/Twitter.85a828a1.png",
+    "static/media/YouTube.0e6b737c.png": "/Buhone/static/media/YouTube.0e6b737c.png"
   },
   "entrypoints": [
     "static/js/runtime-main.f98dd194.js",
     "static/css/2.4ce9e501.chunk.css",
-    "static/js/2.0ba3fdb4.chunk.js",
+    "static/js/2.e14728f8.chunk.js",
     "static/css/main.531698b4.chunk.css",
-    "static/js/main.d5a96da4.chunk.js"
+    "static/js/main.09e86f20.chunk.js"
   ]
 }
