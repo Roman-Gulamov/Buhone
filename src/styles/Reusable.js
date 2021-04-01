@@ -12,6 +12,15 @@ export const Wrapper = styled.div`
             margin-bottom: 4em;
         }
     `}
+    
+    ${props => props.about && css`
+        margin-top: 1em;
+    `}
+
+    ${props => props.clients && css`
+        height: 83vh;
+        padding-top: 3em;
+    `}
 
     ${props => props.bgWhite && css`
         background-color: #fff;
@@ -28,10 +37,18 @@ export const Description = styled.p`
     font-weight: bold;
     color: ${props => props.theme.colors.titleColor};
 
+    @media screen and (max-width: 1024px) {
+        text-align: center;
+    }
+
     @media screen and (max-width: 621px) {
         font-size: 1em;
         text-align: center;
     }
+
+    ${props => props.about && css`
+        padding-top: 0;
+    `}
 `
 
 export const Title = styled.h1`
@@ -41,16 +58,33 @@ export const Title = styled.h1`
     font-weight: 900;
     margin-bottom: 0.5em;
 
-    @media screen and (max-width: 621px) {
-        font-size: 1.5em;
+    @media screen and (max-width: 1024px) {
         text-align: center;
     }
 
+    @media screen and (max-width: 621px) {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    @media screen and (max-width: 500px) {
+        font-size: 1.5em;
+    }
+
     ${props => props.about && css`
+        @media screen and (max-width: 621px) {
+            font-size: 1.8em;
+        }
+
         & span {
             display: block;
             font-family: inherit;
             color: ${props => props.theme.colors.brandColor};
         }
+    `}
+
+    
+    ${props => props.clients && css`
+        margin-bottom: 1.7em;
     `}
 `
