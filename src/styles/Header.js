@@ -56,9 +56,8 @@ export const HeaderBlock = styled.div`
 
 export const BlockInform = styled.div`
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
 
     @media screen and (max-width: 1024px) {
         justify-content: center;
@@ -85,7 +84,7 @@ export const BlogNav = styled.nav`
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
 
     @media screen and (max-width: 1024px) {
         display: none;

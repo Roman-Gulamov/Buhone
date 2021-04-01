@@ -121,7 +121,7 @@ export const MyCarousel = styled(Carousel)`
             opacity: 1;
         }
 
-        @media screen and (max-width: 1024px) {
+        @media screen and (max-width: 1275px) {
             display: none;
         }
     }
@@ -129,7 +129,15 @@ export const MyCarousel = styled(Carousel)`
     &&& .control-prev {
         background: #c0c0c0;
         top: 80%;
-        left: 35.5em;
+        left: 74%;
+
+        @media screen and (min-width: 1800px) {
+            left: 77%;
+        }
+
+        @media screen and (max-width: 1799px) {
+            left: 75%;
+        }
 
         &:before {
             content: '<';
@@ -141,7 +149,7 @@ export const MyCarousel = styled(Carousel)`
     &&& .control-next {
         background: #808080;
         top: 80%;
-        left: 38em;
+        left: 80%;
 
         &:before {
             content: '>';
