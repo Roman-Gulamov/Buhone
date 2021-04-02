@@ -2,7 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 
 import { CLIENTS_DATA } from './ClientsData';
-import { carouselSettings } from '../Main/carouselSettings';
+import { carouselSettings } from '../carouselSettings';
 
 import { Wrapper, Description, Title } from '../../styles/Reusable';
 import { Container } from '../../styles/Container';
@@ -18,10 +18,10 @@ export const Clients = () => {
             <meta name="description" content="Clients" />
             <link rel="canonical" href="https://roman-gulamov.github.io/Buhone/#/clients" />
         </Helmet>
-        <Wrapper bgGray clients>
+        <Wrapper as='main' bgGray clients>
             <Container>
-                <Description about={+true}>Наши клиенты</Description>
-                <Title clients>С нами работают</Title>
+                <Description paddingNone>Наши клиенты</Description>
+                <Title carousel>С нами работают</Title>
                 <MyCarousel {...carouselSettings}>
                     {CLIENTS_DATA.map(({ id, brandOne, altOne, brandTwo, altTwo, brandThree, altThree, brandFour, altFour }) =>
                         <CarouselImg key={id}>

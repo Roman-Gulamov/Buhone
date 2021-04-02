@@ -2,21 +2,6 @@ import styled from 'styled-components';
 import { Carousel } from 'react-responsive-carousel';
 
 
-export const CarouselImg = styled.div`
-    text-align: left;
-
-    &&& img {
-        width: 24%;
-        height: auto;
-
-        @media screen and (max-width: 1024px) {
-            width: 48%;
-            padding-right: 1em;
-            margin-bottom: 2em;
-        }
-    }
-`
-
 export const MyCarousel = styled(Carousel)`
     &&& .carousel-slider {
         overflow: visible;
@@ -91,6 +76,21 @@ export const MyCarousel = styled(Carousel)`
             content: '>';
             border: none;
             color: white;
+        }
+    }
+`
+
+export const CarouselImg = styled.div`
+    text-align: left;
+
+    &&& img {
+        width: 24%;
+        height: auto;
+
+        @media screen and (max-width: 1024px) {
+            width: 48%;
+            padding-right: 1em;
+            margin-bottom: 2em;
         }
     }
 `

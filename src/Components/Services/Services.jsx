@@ -24,7 +24,7 @@ export const Services = () => {
             <meta name="description" content="Services" />
             <link rel="canonical" href="https://roman-gulamov.github.io/Buhone/#/services" />
         </Helmet>
-        <Wrapper bgGray>
+        <Wrapper as='main' bgGray>
             <Container>
                 <Description>Наши услуги</Description>
                 <Title>Мы специализируемся</Title>

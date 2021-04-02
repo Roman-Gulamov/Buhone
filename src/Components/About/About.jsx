@@ -26,11 +26,11 @@ export const About = () => {
             <meta name="description" content="About" />
             <link rel="canonical" href="https://roman-gulamov.github.io/Buhone/#/about" />
         </Helmet>
-        <Wrapper bgWhite about={+true}>
+        <Wrapper as='main' bgWhite marginTop>
             <Container>
                 <AboutWrapper>
                     <AboutIntroduce>
-                        <Description about={+true}>О нас</Description>
+                        <Description paddingNone>О нас</Description>
                         <Title about={+true}>
                             Компания
                             <span>ИвановПром</span>

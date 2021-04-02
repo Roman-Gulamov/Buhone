@@ -5,7 +5,7 @@ import { Helmet } from 'react-helmet';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 import { MAIN_DATA } from './MainData';
-import { carouselSettings } from './carouselSettings';
+import { carouselSettings } from '../carouselSettings';
 
 import {
     MyCarousel,

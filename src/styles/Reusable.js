@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components';
 
+
 export const Wrapper = styled.div`
     ${props => props.header && css`
         height: 17vh;
@@ -11,10 +12,6 @@ export const Wrapper = styled.div`
         @media screen and (max-width: 281px) {
             margin-bottom: 4em;
         }
-    `}
-    
-    ${props => props.about && css`
-        margin-top: 1em;
     `}
 
     ${props => props.clients && css`
@@ -33,6 +30,14 @@ export const Wrapper = styled.div`
     ${props => props.bgGray && css`
         background-color: ${props => props.theme.colors.bgGray};
     `}
+
+    ${props => props.marginTop && css`
+        margin-top: 1.5em;
+    `}
+    
+    ${props => props.marginBottom && css`
+        margin-bottom: 1.5em;
+    `}
 `
 
 export const Description = styled.p`
@@ -50,7 +55,7 @@ export const Description = styled.p`
         text-align: center;
     }
 
-    ${props => props.about && css`
+    ${props => props.paddingNone && css`
         padding-top: 0;
     `}
 `
@@ -60,7 +65,8 @@ export const Title = styled.h1`
     color: ${props => props.theme.colors.desColor};
     font-size: 2.5em;
     font-weight: 900;
-    margin-bottom: 0.5em;
+    margin-top: 0.3em;
+    margin-bottom: 0.7em;
 
     @media screen and (max-width: 1024px) {
         text-align: center;
@@ -68,7 +74,6 @@ export const Title = styled.h1`
 
     @media screen and (max-width: 621px) {
         font-size: 2em;
-        text-align: center;
     }
 
     @media screen and (max-width: 500px) {
@@ -76,10 +81,6 @@ export const Title = styled.h1`
     }
 
     ${props => props.about && css`
-        @media screen and (max-width: 621px) {
-            font-size: 1.8em;
-        }
-
         & span {
             display: block;
             font-family: inherit;
@@ -87,8 +88,7 @@ export const Title = styled.h1`
         }
     `}
 
-    
-    ${props => props.clients && css`
-        margin-bottom: 1.7em;
+    ${props => props.carousel && css`
+        margin-bottom: 1.5em;
     `}
 `
