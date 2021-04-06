@@ -50,7 +50,7 @@ export const ContentItem = styled.div`
     padding: 2.5em;
     margin-bottom: 1em;
     background-color: ${props => props.theme.colors.bgGray};
-    transition: background-color .4s ease;
+    transition: background-color .5s ease;
 
     @media screen and (max-width: 500px) {
         width: 100%;
