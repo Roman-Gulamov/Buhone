@@ -44,6 +44,22 @@ export const GlobalStyle = createGlobalStyle`
         list-style: none;
     }
 
+    body {
+        &::-webkit-scrollbar { 
+            width: 10px;
+        }
+    
+        &::-webkit-scrollbar-track-piece { 
+            background-color: ${props => props.theme.colors.bgGray};
+        }
+    
+        &::-webkit-scrollbar-thumb { 
+            background-color: ${props => props.theme.colors.brandColor};
+            border-radius: 15px;
+            height: 100px;
+        }
+    }
+
     blockquote, q {
         quotes: none;
     }
