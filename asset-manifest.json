@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Buhone/static/css/main.531698b4.chunk.css",
-    "main.js": "/Buhone/static/js/main.6265635b.chunk.js",
-    "main.js.map": "/Buhone/static/js/main.6265635b.chunk.js.map",
+    "main.js": "/Buhone/static/js/main.7e869be3.chunk.js",
+    "main.js.map": "/Buhone/static/js/main.7e869be3.chunk.js.map",
     "runtime-main.js": "/Buhone/static/js/runtime-main.f98dd194.js",
     "runtime-main.js.map": "/Buhone/static/js/runtime-main.f98dd194.js.map",
     "static/css/2.4ce9e501.chunk.css": "/Buhone/static/css/2.4ce9e501.chunk.css",
@@ -12,7 +12,7 @@
     "static/css/2.4ce9e501.chunk.css.map": "/Buhone/static/css/2.4ce9e501.chunk.css.map",
     "static/css/main.531698b4.chunk.css.map": "/Buhone/static/css/main.531698b4.chunk.css.map",
     "static/js/2.c9164ef4.chunk.js.LICENSE.txt": "/Buhone/static/js/2.c9164ef4.chunk.js.LICENSE.txt",
-    "static/js/main.6265635b.chunk.js.LICENSE.txt": "/Buhone/static/js/main.6265635b.chunk.js.LICENSE.txt",
+    "static/js/main.7e869be3.chunk.js.LICENSE.txt": "/Buhone/static/js/main.7e869be3.chunk.js.LICENSE.txt",
     "static/media/Android.b8b9d7a0.png": "/Buhone/static/media/Android.b8b9d7a0.png",
     "static/media/Bottle.1b24b91b.jpg": "/Buhone/static/media/Bottle.1b24b91b.jpg",
     "static/media/BurjKhalifa.b10a606e.jpg": "/Buhone/static/media/BurjKhalifa.b10a606e.jpg",
@@ -37,6 +37,6 @@
     "static/css/2.4ce9e501.chunk.css",
     "static/js/2.c9164ef4.chunk.js",
     "static/css/main.531698b4.chunk.css",
-    "static/js/main.6265635b.chunk.js"
+    "static/js/main.7e869be3.chunk.js"
   ]
 }
