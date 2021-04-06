@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { slide as Menu } from 'react-burger-menu';
-import { withSize } from 'react-sizeme'
+import { withSize } from 'react-sizeme';
 
 import Logo from '../../assets/images/Header/Logo.png';
 import { INFORM_DATA, NAV_DATA } from './HeaderData';
