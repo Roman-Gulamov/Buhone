@@ -5,6 +5,7 @@ import { Carousel } from 'react-responsive-carousel';
 export const MyCarousel = styled(Carousel)`
     &&& .carousel-slider {
         overflow: visible;
+        user-select: none;
     }
 
     &&& .slider-wrapper {
@@ -81,6 +82,7 @@ export const MyCarousel = styled(Carousel)`
 `
 
 export const CarouselImg = styled.div`
+    cursor: grab;
     text-align: left;
 
     &&& img {

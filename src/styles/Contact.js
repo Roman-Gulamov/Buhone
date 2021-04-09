@@ -29,6 +29,7 @@ export const ContactDescription = styled.div`
 
     @media screen and (max-width: 1024px) {
         width: 100%;
+        margin-bottom: 2em;
     }
 ` 
 
@@ -77,5 +78,17 @@ export const Text = styled.span`
     @media screen and (max-width: 621px) {
         font-size: 0.9em;
     }
+` 
+
+export const FormItem = styled.div`
+
+` 
+
+export const FormLabel = styled.label`
+
+` 
+
+export const Button = styled.button`
+
 ` 
 

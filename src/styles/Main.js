@@ -9,6 +9,7 @@ export const MainCarousel = styled.div`
 export const CarouselItem = styled.div`
     position: relative;
     height: 83vh;
+    cursor: grab;
 
     @media screen and (max-width: 1024px) {
         height: 77.5vh;
