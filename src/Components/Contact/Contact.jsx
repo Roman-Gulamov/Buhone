@@ -1,9 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
+import { useForm, ValidationError } from '@formspree/react'; //!
+import { createBrowserHistory } from "history";
 import { Helmet } from 'react-helmet';
+import { Formik, Form } from "formik";
+import Axios from 'axios';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import Cover from '../../assets/images/SaintP.jpg'
 import { DESCRIPTION_DATA } from './ContactData';
+import { LoginSchema } from './LoginSchema';
+import { ContactForm } from './ContactForm';
 
 import { Wrapper, Title } from '../../styles/Reusable';
 import { Container } from '../../styles/Container';
@@ -14,11 +20,86 @@ import {
     DescriptionText,
     DescriptionConnections,
     ConnectionsItem,
-    Text
+    Text,
+    Button
 } from '../../styles/Contact';
+// const handleOnSubmit = (values, actions) => {
+//         axios({
+//           method: "POST",
+//           url: "http://formspree.io/YOUR_FORM_ID",
+//           data: values
+//         })
+//           .then(response => {
+//             actions.setSubmitting(false);
+//             actions.resetForm();
+//             handleServerResponse(true, "Thanks!");
+//           })
+//           .catch(error => {
+//             actions.setSubmitting(false);
+//             handleServerResponse(false, error.response.data.error);
+//           });
+//       }; //!
 
+export const Contact = () => {
+    const [state, handleSubmit] = useForm("mzbybkgd");
+    const [loading, setLoading] = useState('');
+    const [success, setSuccess] = useState('');
+    const [error, setError] = useState('');
 
-export const Contact = ({ size }) => {
+    const goHome = () => {
+        const history = createBrowserHistory();
+
+        setTimeout(() => {
+            history.push('/Buhone/#/contact');
+            history.go(0);
+
+            window.location.reload(); // for mobile phone
+        }, 2000);
+    }
+
+    const clearAfter = (resetForm) => {
+        resetForm({ 
+            values: '' 
+        })
+
+        setTimeout(() => {
+            setLoading('');
+            setSuccess('');
+            setError('');
+        }, 2000);
+    }
+
+    const submitForm = (values, resetForm) => {
+        const axios = Axios.create();
+
+        axios.interceptors.request.use(
+        (config) => {
+            setLoading('loading');
+            return config; 
+        }); // Before send
+    
+
+        axios.interceptors.response.use(
+        (response) => {
+            if (response.status === 200) {
+                setLoading();
+                setSuccess('success');
+                clearAfter(resetForm);
+                goHome();
+            }
+        }, 
+        (error) => {
+            if (error) {
+                setLoading();
+                setError('error');
+                clearAfter(resetForm)
+                return Promise.reject(error);
+            }
+        }) // Submission result
+
+        axios.post("https://formspree.io/xbjpredk", {...values}) // Submitting
+    }
+
     return (
         <>
         <Helmet>
@@ -45,7 +126,18 @@ export const Contact = ({ size }) => {
                             )}
                         </DescriptionConnections>
                     </ContactDescription>
-                    <div></div>
+                    <Formik
+                        initialValues={{ name: '', surname: '', message: '' }}
+                        validationSchema={LoginSchema}
+                        onSubmit={(values, {resetForm}) => submitForm(values, resetForm)}
+                    >
+                        {({ isSubmitting, values }) => (
+                            <Form action="https://formspree.io/f/mzbybkgd" method="POST">
+                                <ContactForm values={values} />
+                                <Button type='submit' disabled={isSubmitting}>Send</Button>
+                            </Form>
+                        )}
+                    </Formik>
                 </ContactWrapper>
             </Container>
         </Wrapper>
