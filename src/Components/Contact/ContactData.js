@@ -1,33 +1,39 @@
 import { faMobileAlt, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 
-export const INPUT_DATA = [
+export const FORM_DATA = [
     {
         id: '1',
-        name: 'username',
+        name: 'name',
         component: 'input',
         autoFocus: true,
         autoComplete: 'true',
         type: 'text',
-        title: 'Name'
+        title: 'Имя',
+        placeholder: 'Иван'
     },
     {
-        name: 'email',
+        id: '2',
+        name: 'surname',
         component: 'input',
         autoFocus: false,
         autoComplete: 'true',
-        type: 'email',
-        title: 'Email'
+        type: 'text',
+        title: 'Фамилия',
+        placeholder: 'Иванов'
     },
     {
+        id: '3',
         name: 'message',
         component: 'textarea',
         autoFocus: false,
         autoComplete: null,
         type: null,
-        title: 'Message'
+        title: 'Сообщение',
+        placeholder: 'Ваше сообщение'
     },
 ]
+
 
 export const DESCRIPTION_DATA = [
     {
