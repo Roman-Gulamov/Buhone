@@ -30,8 +30,8 @@ export const Wrapper = styled.div`
         padding-top: 4em;
         overflow: hidden;
 
-        @media screen and (max-width: 600px) {
-            height: 79vh;
+        @media screen and (max-width: 1024px) {
+            height: auto;
         }
 
         &::after {
@@ -112,6 +112,7 @@ export const Title = styled.h1`
     `}
 
     ${props => props.contact && css`
+        margin-top: 0;
         color: #fff;
     `}
 
