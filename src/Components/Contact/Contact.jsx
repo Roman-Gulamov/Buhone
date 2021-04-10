@@ -8,8 +8,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import Cover from '../../assets/images/SaintP.jpg'
 import { DESCRIPTION_DATA } from './ContactData';
-import { LoginSchema } from './LoginSchema';
-import { ContactForm } from './ContactForm';
+import { Schema } from './Schema';
+import { FormMap } from './FormMap';
 
 import { Wrapper, Title } from '../../styles/Reusable';
 import { Container } from '../../styles/Container';
@@ -21,6 +21,8 @@ import {
     DescriptionConnections,
     ConnectionsItem,
     Text,
+    ContactForm,
+    FormButton,
     Button
 } from '../../styles/Contact';
 // const handleOnSubmit = (values, actions) => {
@@ -126,18 +128,22 @@ export const Contact = () => {
                             )}
                         </DescriptionConnections>
                     </ContactDescription>
-                    <Formik
-                        initialValues={{ name: '', surname: '', message: '' }}
-                        validationSchema={LoginSchema}
-                        onSubmit={(values, {resetForm}) => submitForm(values, resetForm)}
-                    >
-                        {({ isSubmitting, values }) => (
-                            <Form action="https://formspree.io/f/mzbybkgd" method="POST">
-                                <ContactForm values={values} />
-                                <Button type='submit' disabled={isSubmitting}>Send</Button>
-                            </Form>
-                        )}
-                    </Formik>
+                    <ContactForm>
+                        <Formik
+                            initialValues={{ name: '', surname: '', message: '' }}
+                            validationSchema={Schema}
+                            onSubmit={(values, {resetForm}) => submitForm(values, resetForm)}
+                        >
+                            {({ isSubmitting, values }) => (
+                                <Form action="https://formspree.io/f/mzbybkgd" method="POST">
+                                    <FormMap values={values} />
+                                    <FormButton disabled={isSubmitting}>
+                                        <Button type='submit' disabled={isSubmitting}>Отправить сообщение</Button>
+                                    </FormButton>
+                                </Form>
+                            )}
+                        </Formik>
+                    </ContactForm>
                 </ContactWrapper>
             </Container>
         </Wrapper>
