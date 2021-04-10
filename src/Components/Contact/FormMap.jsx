@@ -1,11 +1,11 @@
 import React from 'react';
-import { Field, ErrorMessage } from "formik";
+import { Field } from "formik";
 
 import { FORM_DATA } from './ContactData';
-import { FormItem, FormLabel } from '../../styles/Contact';
+import { FormItem, FormLabel, MyErrorMessage } from '../../styles/Contact';
 
 
-export const ContactForm = ({ values }) => {
+export const FormMap = ({ values }) => {
     const findValue = (name, values) => {
         switch (name) {
             case 'name':
@@ -22,7 +22,11 @@ export const ContactForm = ({ values }) => {
     return (
         <>
             {FORM_DATA.map(({ id, name, component, autoFocus, autoComplete, type, title, placeholder }) =>
-                <FormItem key={id}>
+                <FormItem 
+                    key={id} 
+                    input={autoComplete} 
+                    first={autoFocus} 
+                >
                     <FormLabel htmlFor={name}>
                         {title}
                     </FormLabel>
@@ -35,7 +39,7 @@ export const ContactForm = ({ values }) => {
                         value={findValue(name, values)}
                         placeholder={placeholder}
                     />
-                    <ErrorMessage component="span" name={name} />
+                    <MyErrorMessage component="span" name={name} text={+true}/>
                 </FormItem>
             )}
         </>
