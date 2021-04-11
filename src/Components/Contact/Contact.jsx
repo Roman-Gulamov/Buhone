@@ -1,15 +1,14 @@
 import React, { useState } from 'react';
-import { useForm, ValidationError } from '@formspree/react'; //!
-import { createBrowserHistory } from "history";
 import { Helmet } from 'react-helmet';
 import { Formik, Form } from "formik";
-import Axios from 'axios';
+import Axios from "axios";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import Cover from '../../assets/images/SaintP.jpg'
 import { DESCRIPTION_DATA } from './ContactData';
 import { Schema } from './Schema';
 import { FormMap } from './FormMap';
+import { goHome } from './goHome';
 
 import { Wrapper, Title } from '../../styles/Reusable';
 import { Container } from '../../styles/Container';
@@ -23,41 +22,15 @@ import {
     Text,
     ContactForm,
     FormButton,
+    Result,
     Button
 } from '../../styles/Contact';
-// const handleOnSubmit = (values, actions) => {
-//         axios({
-//           method: "POST",
-//           url: "http://formspree.io/YOUR_FORM_ID",
-//           data: values
-//         })
-//           .then(response => {
-//             actions.setSubmitting(false);
-//             actions.resetForm();
-//             handleServerResponse(true, "Thanks!");
-//           })
-//           .catch(error => {
-//             actions.setSubmitting(false);
-//             handleServerResponse(false, error.response.data.error);
-//           });
-//       }; //!
+
 
 export const Contact = () => {
-    const [state, handleSubmit] = useForm("mzbybkgd");
-    const [loading, setLoading] = useState('');
-    const [success, setSuccess] = useState('');
-    const [error, setError] = useState('');
-
-    const goHome = () => {
-        const history = createBrowserHistory();
-
-        setTimeout(() => {
-            history.push('/Buhone/#/contact');
-            history.go(0);
-
-            window.location.reload(); // for mobile phone
-        }, 2000);
-    }
+    const [loading, setLoading] = useState(false);
+    const [success, setSuccess] = useState(false);
+    const [error, setError] = useState(false);
 
     const clearAfter = (resetForm) => {
         resetForm({ 
@@ -66,9 +39,7 @@ export const Contact = () => {
 
         setTimeout(() => {
             setLoading('');
-            setSuccess('');
-            setError('');
-        }, 2000);
+        }, 3000);
     }
 
     const submitForm = (values, resetForm) => {
@@ -76,7 +47,7 @@ export const Contact = () => {
 
         axios.interceptors.request.use(
         (config) => {
-            setLoading('loading');
+            setLoading(true);
             return config; 
         }); // Before send
     
@@ -84,22 +55,22 @@ export const Contact = () => {
         axios.interceptors.response.use(
         (response) => {
             if (response.status === 200) {
-                setLoading();
-                setSuccess('success');
+                setLoading(false);
+                setSuccess('Успешно отправлено!');
                 clearAfter(resetForm);
                 goHome();
             }
         }, 
         (error) => {
             if (error) {
-                setLoading();
-                setError('error');
-                clearAfter(resetForm)
+                setLoading(false);
+                setError('Ошибка отправки. Попробуйте снова');
+                clearAfter(resetForm);
                 return Promise.reject(error);
             }
         }) // Submission result
 
-        axios.post("https://formspree.io/xbjpredk", {...values}) // Submitting
+        axios.post("https://formspree.io/mzbybkgd", {...values}) // Submitting
     }
 
     return (
@@ -135,9 +106,10 @@ export const Contact = () => {
                             onSubmit={(values, {resetForm}) => submitForm(values, resetForm)}
                         >
                             {({ isSubmitting, values }) => (
-                                <Form action="https://formspree.io/f/mzbybkgd" method="POST">
-                                    <FormMap values={values} />
+                                <Form>
+                                    <FormMap values={values} loading={loading} />
                                     <FormButton disabled={isSubmitting}>
+                                        <Result error={error} success={success}>{error} {success}</Result>
                                         <Button type='submit' disabled={isSubmitting}>Отправить сообщение</Button>
                                     </FormButton>
                                 </Form>
