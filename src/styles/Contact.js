@@ -7,7 +7,7 @@ export const ContactCover = styled.img`
     top: 0;
     left: 0;
     width: 100%;
-    height: 47em;
+    height: 51em;
     margin: auto;
     object-fit: cover;
     z-index: -1;
@@ -135,7 +135,7 @@ export const FormItem = styled.div`
     ${props => props.input && css`
         display: inline-flex;
         width: 50%;
-        margin-bottom: 2em;
+        margin-bottom: 3em;
 
         @media screen and (max-width: 1024px) {
             display: flex;
@@ -154,17 +154,35 @@ export const FormLabel = styled.label`
     }
 ` 
 
-export const FormButton = styled.div`
-    display: flex;
-    justify-content: flex-end;
-`
-
 export const MyErrorMessage = styled(ErrorMessage)`
     position: absolute;
     top: 100%;
     left: 0;
     color: red;
 `
+
+export const FormButton = styled.div`
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: 1024px) {
+        flex-direction: column;
+    }
+`
+
+export const Result = styled.span`
+    visibility: ${props => props.error ? 'visible' : props.success ? 'visible' : 'hidden'};
+    color: ${props => props.error ? 'red' : 'green'};
+    font-size: ${props => props.error ? '0.6em' : '1.1em'};
+    font-weight: bold;
+    font-style: italic;
+    padding-right: 1em;
+
+    @media screen and (max-width: 1024px) {
+        font-size: ${props => props.error ? '0.6em' : '1em'};
+        margin-bottom: 1em;
+    }
+` 
 
 export const Button = styled.button`
     font-size: 1.1em;
@@ -175,8 +193,12 @@ export const Button = styled.button`
     transition: all .3s ease;
     cursor: pointer;
 
-    &:active {
+    &:active, :disabled {
         transform: scale(0.96);
+    }
+
+    &:disabled {
+        background-color: #877f7d;
     }
 ` 
 
