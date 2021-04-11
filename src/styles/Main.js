@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 import { Carousel } from 'react-responsive-carousel';
-
+import { fadeInAnimations } from './Reusable';
 
 export const MainCarousel = styled.div`
     position: relative;
+    animation: .7s linear ${fadeInAnimations};
 `
 
 export const CarouselItem = styled.div`

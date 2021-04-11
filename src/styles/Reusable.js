@@ -1,7 +1,14 @@
-import styled, { css } from 'styled-components';
+import styled, { css, keyframes } from 'styled-components';
+import { fadeIn } from 'react-animations';
 
+
+export const fadeInAnimations = keyframes`
+    ${fadeIn}
+`;
 
 export const Wrapper = styled.div`
+    animation: .7s linear ${fadeInAnimations};
+
     ${props => props.header && css`
         height: 17vh;
         z-index: 9999;
