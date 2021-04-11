@@ -10,11 +10,11 @@ import { FormItem, FormLabel, MyErrorMessage } from '../../styles/Contact';
 export const FormMap = ({ values, loading }) => {
     return (
         <>
-            {FORM_DATA.map(({ id, name, component, autoFocus, autoComplete, type, title, placeholder }) =>
+            {FORM_DATA.map(({ id, name, component, autoComplete, type, title, placeholder }) =>
                 <FormItem 
                     key={id} 
                     input={autoComplete} 
-                    first={autoFocus} 
+                    first={name === 'name' ? true : false} 
                 >
                     <FormLabel htmlFor={name}>
                         {title}
@@ -23,7 +23,6 @@ export const FormMap = ({ values, loading }) => {
                         component={component}
                         name={name}
                         type={type}
-                        autoFocus={autoFocus}
                         autoComplete={autoComplete}
                         value={findValue(name, values)}
                         placeholder={placeholder}
