@@ -2,7 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 
 import { REVIEWS_DATA } from './ReviewsData';
-import { carouselSettings } from '../carouselSettings';
+import { carouselSettings } from '../Services/carouselSettings';
 
 import { Wrapper, Title, Description } from '../../styles/Reusable';
 import { Container } from '../../styles/Container';
