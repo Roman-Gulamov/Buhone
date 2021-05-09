@@ -24,6 +24,10 @@ export const CarouselItem = styled.div`
         height: 73.2vh;
     }
 
+    &:active {
+        cursor: grabbing;
+    }
+
     &:after {
         content: "";
         position: absolute;

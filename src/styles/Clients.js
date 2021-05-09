@@ -85,6 +85,10 @@ export const CarouselImg = styled.div`
     cursor: grab;
     text-align: left;
 
+    &:active {
+        cursor: grabbing;
+    }
+
     &&& img {
         width: 24%;
         height: auto;

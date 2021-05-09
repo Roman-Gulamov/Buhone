@@ -84,7 +84,7 @@ export const CarouselWrapper = styled.div`
     justify-content: space-between;
     background-color: ${props => props.theme.colors.bgGray};
     padding: 2.8em 5.8em;
-    cursor: default;
+    cursor: grab;
     user-select: none;
 
     @media screen and (max-width: 1024px) {
@@ -93,6 +93,10 @@ export const CarouselWrapper = styled.div`
 
     @media screen and (max-width: 281px) {
         padding: 2.8em 0;
+    }
+
+    &:active {
+        cursor: grabbing;
     }
 `
 
